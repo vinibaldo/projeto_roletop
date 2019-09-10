@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+}
+
+h2{
+    color: #FFC600;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/fundo.png);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-container {
+    margin: 0 auto;
+    max-width: 1360px;
+    background-color: #7D0093;
+}
+
+.section-container ul {
+    margin: 0 auto;
+    max-width: 1360px;
+    border: 0.4em solid #FFC600;
+}
+
+.section-container > a {
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.linha1{
+    height: 18em;
+}
+/*********************************************
+                    NAV
+**********************************************/
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-image: url(../img/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav #bt-mobile-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color: #FFC600;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    background-color: #FFC600;
+    color: #7D0093;
+}
+
+nav ul > li:last-child {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.active {
+    color: #FFC600;
+}
+
+/*********************************************
+                    NAV
+**********************************************/
+/*********************************************
+                    LOGO
+**********************************************/
+.logo-area{
+    text-align: center;
+}
+.logo-area img{
+    width: 18em;
+}
+/*********************************************
+                    LOGO
+**********************************************/
+
+/*********************************************
+                    FOOTER
+**********************************************/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #7D0093;
+    max-width: 1360px;
+    margin: auto;
+    height: 8em;
+}
+footer .loc{
+    background-color: #FFC600;
+    width: 46%;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+footer .contato{
+    background-color: #FFC600;
+    width: 45%;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+footer div.loc iframe{
+    margin-left: 1em;
+}
+footer iframe{
+    max-width: 94%;
+    max-height: 4em;
+}
+footer h3{
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+    color: #7D0093;
+}
+footer p{
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+    color: #7D0093;
+}
+/*********************************************
+                    FOOTER
+**********************************************/
+/* media query */
+@media(max-width: 1366px){
+    nav a{
+        font-size: 0.8em;
+    }
+    .logo-area img{
+        width: 10em;
+    }
+    .linha1{
+        height: 11em;
+    }
+    footer{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1000px){
+    body{
+        background-image: none;
+    }
+    nav {
+        background-image: none;
+        background-color: #7D0093;
+    }
+    .logo-area{
+        background-color: #7D0093;
+    }
+    .linha1{
+        height: 10em;
+    }
+    .section-container ul {
+        margin: 0 auto;
+        max-width: 100%;
+        border: 0.2em solid #FFC600;
+    }
+    nav {
+        width: 100%;
+        background-image: none;
+        background-color: #7D0093;
+    }
+    nav ul > li {
+        width: 50%;
+    }
+    /* **********************************************************************************
+                                        NAV - MOBILE
+    ************************************************************************************/
+    nav #bt-mobile-menu{
+        display: block;
+    }
+    nav .bt-common-menu{
+        display: none;
+    }
+    nav .bt-common-menu.active{
+        display: block;
+    }
+    nav ul.mobile-mode{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        max-width: 1360px;
+        width: 70%;
+    }
+}
+
+@media(max-width: 700px){
+    .linha1{
+        height: 9em;
+    }
+    .section-container ul {
+        margin: 0 auto;
+        max-width: 100%;
+        border: 0.1em solid #FFC600;
+    }
+    nav {
+        background-image: none;
+        background-color: #7D0093;
+    }
+    nav a{
+        font-size: 0.413em;
+    }
+    footer iframe{
+        max-width: 90%;
+    }
+}
+@media(max-width: 535px){
+    .linha1{
+        height: 9em;
+    }
+    nav {
+        background-image: none;
+        background-color: #7D0093;
+    }
+    footer h3{
+        font-size: 70%;
+    }
+    footer p{
+        font-size: 70%;
+    }
+    footer iframe{
+        max-width: 85%;
+    }
+    footer{
+        height: 100%;
+    }
+}
+@media(max-width: 350px){
+    .section-container ul {
+        max-width: 1360px;
+        border: 0.05em solid #FFC600;
+    }
+    .linha1{
+        height: 6.95em;
+    }
+    nav a{
+        font-size: 0.413em
+    }
+    /* **********************************************************************************
+                                        NAV - MOBILE
+    ************************************************************************************/
+    nav #bt-mobile-menu{
+        display: block;
+    }
+    nav .bt-common-menu{
+        display: none;
+    }
+    nav .bt-common-menu.active{
+        display: block;
+    }
+    nav ul.mobile-mode{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-area{
+        background-color: #7D0093;
+    }
+    .logo-area img{
+        width: 7em;
+    }
+    footer h3{
+        font-size: 0.8em;
+    }
+    footer p{
+        font-size: 0.6em
+    }
+    footer .loc{
+        max-width: 50%;
+        text-align: center;
+    }
+    footer{
+        max-width: 100%;
+        max-height: 6em;
+    }
+    footer div.loc iframe{
+        max-width: 94%;
+        max-height: 2.6em;
+        margin-left: 3%;
+        margin-right: 10em;
+    }
+}

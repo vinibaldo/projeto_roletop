@@ -1,0 +1,280 @@
+/*********************************************
+                    BANNER
+**********************************************/
+.banner{
+    margin-bottom: -0.25em;
+    text-align: center;
+}
+.banner img{
+    max-width: 1360px;
+}
+/*********************************************
+                    BANNER
+**********************************************/
+
+/*********************************************
+                    EVENTOS
+**********************************************/
+.eventos{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1360px;
+    width: 100%;
+    background-color: #FFC600;
+    border: 0.5em solid #7D0093;
+}
+.evento1{
+    max-width: 25%;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    border: 0.3em solid #7D0093;
+}
+.evento2{
+    max-width: 25%;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    border: 0.3em solid #7D0093;
+}
+.evento3{
+    max-width: 25%;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    border: 0.3em solid #7D0093;
+}
+.evento1 img{
+    max-width: 100%;
+}
+.evento2 img{
+    max-width: 100%;
+}
+.evento3 img{
+    max-width: 100%;
+}
+.evento h3{
+    font-size: 250%;
+    text-align: center;
+    margin-top: -3em;
+    color: #FFC600;
+}
+.evento h4{
+    font-size: 250%;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: #7D0093;
+}
+/*********************************************
+                    EVENTOS
+**********************************************/
+
+/*********************************************
+                    FEEDBACK
+**********************************************/
+.feedback{
+    background-color: #7D0093;
+    border: 0.5em solid #FFC600; 
+    max-width: 1360px;
+    margin: auto;
+}
+.feed{
+    background-color: #FFC600;
+    max-width: 96%;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.5em;  
+    margin-bottom: 0.5em;
+    height: 100%;
+}
+.feed h3{
+    text-align: center;
+    font-size: 250%;
+    color: #7D0093;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.feed p{
+    text-align: justify;
+    font-size: 200%;
+    margin-top: 1em;
+    margin-bottom: 1em; 
+    margin-left: 1.8em;
+    margin-right: 1.8em;
+    color: #7D0093;
+}
+.linha2{
+    height: 0.05em;
+}
+/*********************************************
+                    FEEDBACK
+**********************************************/
+/* media query */
+@media(max-width: 1366px){
+    .banner img{
+        width: 70%;
+    }
+    .eventos{
+        width: 70%;
+    }
+    .feedback{
+        width: 70%;
+    }
+    .evento h3{
+        font-size: 170%;
+    }
+    .evento h4{
+        font-size: 170%;
+    }
+}
+
+@media(max-width: 1000px){
+    .banner img{
+        width: 100%;
+    }
+    .evento h3{
+        font-size: 170%;
+        text-align: center;
+        margin-top: -3em;
+        color: #FFC600;
+    }
+    .evento h4{
+        font-size: 170%;
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        color: #7D0093;
+    }
+    .feed h3{
+        font-size: 200%;
+    }
+    .feed p{
+        font-size: 150%;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .eventos{
+        width: 100%;
+    }
+    .feedback{
+        width: 100%;
+    }
+}
+
+@media(max-width: 700px){
+    .banner img{
+        width: 100%;
+    }
+    .evento h3{
+        font-size: 130%;
+        text-align: center;
+        margin-top: -3em;
+        color: #FFC600;
+    }
+    .evento h4{
+        font-size: 130%;
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        color: #7D0093;
+    }
+    .feed h3{
+        font-size: 150%;
+    }
+    .feed p{
+        font-size: 100%;
+    }
+}
+@media(max-width: 535px){
+    .banner{
+        width: 100%;
+    }
+    .evento h4{
+        text-align: center;
+        font-size: 100%;
+    }
+    .evento h3{
+        text-align: center;
+        font-size: 100%;
+    }
+    .evento1{
+        max-width: 30%;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        border: 0.3em solid #7D0093;
+    }
+    .evento2{
+        max-width: 30%;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        border: 0.3em solid #7D0093;
+    }
+    .evento3{
+        max-width: 30%;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        border: 0.3em solid #7D0093;
+    }
+}
+@media(max-width: 350px){
+    .banner img{
+        max-width: 100%;
+    }
+    .eventos{
+        max-width: 100%;
+    }
+    .eventos img{
+        max-width: 4.8em;
+    }
+    .evento h4{
+        text-align: center;
+        font-size: 0.7em;
+    }
+    .evento h3{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .evento{
+        max-width: 100%;
+    }
+    .feed{
+        max-width: 96%;
+        text-align: center;
+        margin: auto;
+        margin-top: 0.5em;  
+        margin-bottom: 0.5em;
+        height: 5em;
+    }
+    .feed h3{
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+        margin-left: 0.1em;
+        font-size: 1em;
+    }
+    .feed p{
+        font-size: 0.7em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em; 
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+        color: #7D0093;
+    }
+    .evento1{
+        max-width: 5em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        border: 0.1em solid #7D0093;
+    }
+    .evento2{
+        max-width: 5em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        border: 0.1em solid #7D0093;
+    }
+    .evento3{
+        max-width: 5em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        border: 0.1em solid #7D0093;
+    }
+}

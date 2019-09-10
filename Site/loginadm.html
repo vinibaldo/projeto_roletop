@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROLETOP - Login</title>
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon" type="image/x-icon"/>
+    <!-- Importar fontes do Google -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <!-- Importar folha do CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style-forms.css" rel="stylesheet" type="text/css">
+    <!-- Importar o Font Awesome para o projeto -->
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <script src="https://kit.fontawesome.com/a4b7b7f644.js"></script>
+</head>
+
+<body>
+</div>
+<header>
+    <nav>
+        <div class="logo-area">
+            <img src="img/logo.png" title="Logo ROLETOP" alt="Logo ROLETOP">      
+        </div>
+        <div class="section-container">
+            <ul>
+                <li id="bt-mobile-menu">
+                    <!-- HTML para colocar os ícones do FA -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html" class="active">PRINCIPAL</a></li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="sobre_nos.html">SOBRE NÓS</a></li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="galeria.html">GALERIA</a></li>
+                <li><a id="bt-peca_ja" href="login.html">LOGIN</a></li>
+                <li><a id="bt-peca_ja" href="cadastro.html">CADASTRO</a></li>
+                <li><a id="bt-peca_ja" href="faca_evento.html">FAÇA EVENTO</a></li>
+            </ul>
+        </div>
+        <div class="back"></div>
+    </nav>
+</header>
+<main>
+    <div class="linha1"></div>
+    <h2>LOGIN</h2>
+    <form method="GET" action="dashboard.html">
+        <div class="pos">
+            <div class="pos1">
+                <label for="email">E-mail</label>
+            </div>
+            <br />
+            <input id="email" type="email" />
+        </div>
+        <div>
+            <div class="pos1">
+                <label for="password">Senha</label>
+            </div>
+            <br />
+            <input id="password" type="password" />
+        </div>
+        <p><a href="redefinir.html">Esqueci a senha.</a></p>
+        <p><a href="cadastro.html">Não sou cadastrado.</a></p>
+        <input type="submit" value="LOGAR" />
+    </form>
+    <div class="linha2"></div>
+</main>
+<footer>
+    <div class="loc">
+        <h3>LOCALIZAÇÃO</h3>
+        <p></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14631.555546618638!2d-46.646147!3d-23.5364985!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb23619858bc7e63e!2sEscola%20SENAI%20de%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1567774146395!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="contato">
+        <h3>CONTATO</h3>
+        <p>TELEFONES: (11) 1234-5678<br />E-MAIL: alexandre@ROLETOP.com.br<br/>MÍDIA SOCIAL:</p>
+    </div>
+</footer>
+
+<!-- Abrir/fechar menu mobile-->
+<script>
+    function toggleMobileMenu() {
+        var ul = document.querySelector("nav ul");
+        var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+        var icon = document.querySelector(".icon > i");
+        
+        ul.classList.toggle("mobile-mode");
+        
+        if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.remove("fa");
+            
+            icon.classList.add("fas");
+            icon.classList.add("fa-times");
+        } else {
+            icon.classList.remove("fas");
+            icon.classList.remove("fa-times");
+            
+            icon.classList.add("fa");
+            icon.classList.add("fa-bars");
+        }
+        
+        for (var button of commonButtons) {
+            button.classList.toggle("active");
+        }
+    }
+</script>
+</body>
+
+</html>

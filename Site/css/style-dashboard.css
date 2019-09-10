@@ -1,0 +1,248 @@
+main {
+    width: 1360px;
+    margin: auto;
+    background-color: #7D0093;
+}
+
+.linha1{
+    height: 20em;
+}
+
+.linha2{
+    height: 1em;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.dashboard h3{
+    margin-top: 8%;
+    text-align: center;
+    color: #5d006d;
+    font-size: 2em;
+}
+
+.dashboard h4{
+    text-align: center;
+    color: #5d006d;
+    font-size: 2em;
+}
+
+.dashboard{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dashboard div{
+    width: 25%;
+    height: 7em;
+}
+
+.dashboard .aprovados{
+    background-color: #00e000;
+}
+
+.dashboard .pendentes{
+    background-color: #e0d100;
+}
+
+.dashboard .recusados{
+    background-color: #e00000;
+}
+
+table {
+    text-align: center;
+    color: #7D0093;
+    border: 1px dashed #FFC600;
+    width: 80%;
+    padding: 5px;
+    word-break: normal;
+    margin: auto;
+}
+
+table th {
+    background-color:#FFC600;
+}
+
+tbody{
+    color: #FFC600;
+}
+
+table a {
+    text-decoration: none;
+    color: #FFC600;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+tfoot td {
+    text-align: center;
+    color: #FFC600;
+    background-color: #5d006d;
+}
+
+thead > tr:first-child > th:last-child {
+    padding: 0 .5em;
+}
+
+/**********************************************************************************************
+                                        INICIO - CALENDARIO
+**********************************************************************************************/
+.calen > ul > li > a{
+    color: #7D0093;
+    text-decoration: none;
+}
+.calen > ul > li > a:hover{
+    background-color: #FFC600;
+    color: #7D0093;
+    padding: 5px 9px; 
+}
+ul {
+    list-style-type: none;
+}
+.calen {
+    font-family: Verdana, sans-serif;
+    width: 70%;
+    margin: auto;
+}
+
+/* Month header */
+.month {
+  padding: 50px 25px;
+  width: 100%;
+  background: #FFC600;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: #7D0093;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 25px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:18px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #FFC600;
+  color: #7D0093 !important;
+}
+/**********************************************************************************************
+                                        FIM - CALENDARIO
+**********************************************************************************************/
+
+@media (max-width: 1360px) {
+    main {
+        width: 70%;
+    }
+    .dashboard h3{
+        font-size: 1.5em;
+    }
+    
+    .dashboard h4{
+        font-size: 1.5em;
+    }
+    .linha1{
+        height: 13em;
+    }
+    footer{
+        width: 70%;
+    }
+}
+@media (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+    footer{
+        width: 100%;
+    }
+}
+@media (max-width: 700px){
+    .dashboard h3{
+        font-size: 1em;
+    }
+    .dashboard h4{
+        font-size: 1em;
+    }
+    .dashboard div{
+        width: 25%;
+        height: 4em;
+    }
+    table{
+        width: 90%;
+        font-size: 70%;
+    }
+}
+@media (max-width: 400px){
+    .dashboard h3{
+        font-size: 0.7em;
+    }
+    .dashboard h4{
+        font-size: 0.7em;
+    }
+    .dashboard div{
+        width: 25%;
+        height: 3em;
+    }
+    table{
+        width: 90%;
+        font-size: 50%;
+    }
+}

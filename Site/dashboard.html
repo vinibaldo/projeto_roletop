@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROLETOP - Dashboard</title>
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon" type="image/x-icon"/>
+    <!-- Importar fontes do Google -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <!-- Importar folha do CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style-dashboard.css" rel="stylesheet" type="text/css">
+    <!-- Importar o Font Awesome para o projeto -->
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <script src="https://kit.fontawesome.com/a4b7b7f644.js"></script>
+</head>
+
+<body>
+</div>
+<header>
+    <nav>
+        <div class="logo-area">
+            <img src="img/logo.png" title="Logo ROLETOP" alt="Logo ROLETOP">      
+        </div>
+        <div class="section-container">
+            <ul>
+                <li id="bt-mobile-menu">
+                    <!-- HTML para colocar os ícones do FA -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html" class="active">PRINCIPAL</a></li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="sobre_nos.html">SOBRE NÓS</a></li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="galeria.html">GALERIA</a></li>
+                <li><a id="bt-peca_ja" href="login.html">LOGIN</a></li>
+                <li><a id="bt-peca_ja" href="cadastro.html">CADASTRO</a></li>
+                <li><a id="bt-peca_ja" href="faca_evento.html">FAÇA EVENTO</a></li>
+            </ul>
+        </div>
+        <div class="back"></div>
+    </nav>
+</header>
+<main>
+    <div class="linha1"></div>
+    <h2>DASHBOARD</h2>
+    <div class="dashboard">
+        <div class="aprovados">
+            <h3>APROVADOS</h3>
+            <h4>03</h4>
+        </div>
+        <div class="pendentes">
+            <h3>PENDENTES</h3>
+            <h4>03</h4>
+        </div>
+        <div class="recusados">
+            <h3>RECUSADOS</h3>
+            <h4>03</h4>
+        </div>
+    </div>
+    <br />
+    <h2>LISTA DE EVENTOS PENDENTES</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="5">Eventos</th>
+                <th rowspan="5">E-mail do requerente</th>
+                <th colspan="2">Serviços</th>
+                <th colspan="2" rowspan="5">Aprovar</th>
+                <th rowspan="5">Inf. adc.</th>
+            </tr>
+            <tr>
+                <th>Som</th>
+                <th>Luz</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="15">
+                    <p>Pedidos atualizados em 07/09/2019 às 19:52</p>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Casamento da julia</td>
+                <td>julia@algumemail.com</td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><a href="#" onclick="alert('Evento aceito')"><i class="fas fa-check"></i></a></td>
+                <td><a href="#" onclick="alert('Evento recusado')"><i class="fas fa-times"></i></a></td>
+                <td><a href="#" onclick="alert('Este evento será na data xx/xx/xxxx, com inicio às yy:yy e fim às zz:zz. Descrição: Encher linguiça.')">Clique aqui</a></td>
+            </tr>
+            <tr>
+                <td>Show do Bon Jovi</td>
+                <td>producao@bonjovi.com</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><a href="#" onclick="alert('Evento aceito')"><i class="fas fa-check"></i></a></td>
+                <td><a href="#" onclick="alert('Evento recusado')"><i class="fas fa-times"></i></a></td>
+                <td><a href="#" onclick="alert('Este evento será na data 04/09/2019, com inicio às 19:00 e fim às 23:59. Descrição: o evento contará com o cantor internacional Bon Jovi e o evento contará com cerca de 400 pessoas.')">Clique aqui</a></td>
+            </tr>
+            <tr>
+                <td>Palestra</td>
+                <td>joao@acessoria.com</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+                <td><a href="#" onclick="alert('Evento aceito')"><i class="fas fa-check"></i></a></td>
+                <td><a href="#" onclick="alert('Evento recusado')"><i class="fas fa-times"></i></a></td>
+                <td><a href="#" onclick="alert('Este evento será na data 02/10/2019, com inicio às 17:00 e fim às 21:00. Descrição: palestra motivacional conduzida por João Cardoso, um empresário no ramo industrial.')">Clique aqui</a></td>
+            </tr>
+            <tr>
+                <td>Show do Chimbinha</td>
+                <td>chimbinha@acessoria.com</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><a href="#" onclick="alert('Evento aceito')"><i class="fas fa-check"></i></a></td>
+                <td><a href="#" onclick="alert('Evento recusado')"><i class="fas fa-times"></i></a></td>
+                <td><a href="#" onclick="alert('Este evento será na data 15/11/2019, com inicio às 17:00 e fim às 21:00. Descrição: o cantor chimbinha fara um show beneficente, com numero de pessoas previstas para 300 pessoas.')">Clique aqui</a></td>
+            </tr>
+            <tr>
+                <td>Festa da Maçã</td>
+                <td>frutafest@acessoria.com</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><a href="#" onclick="alert('Evento aceito')"><i class="fas fa-check"></i></a></td>
+                <td><a href="#" onclick="alert('Evento recusado')"><i class="fas fa-times"></i></a></td>
+                <td><a href="#" onclick="alert('Este evento será na data 20/11/2019, com inicio às 19:00 e fim às 02:00. Descrição: festa da maçã é um evento do tipo balada que arrasta multidões, com 400 pulseiras para as pessoas que irão acessar o evento.')">Clique aqui</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <div class="linha2"></div>
+    <h2>CALENDÁRIO</h2>
+    <div class="linha2"></div>
+    <section class="calen">
+        <div class="month">
+            <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>SETEMBRO<br><span style="font-size:18px">2019</span></li>
+            </ul>
+        </div>
+        
+        <ul class="weekdays">
+            <li>D</li>
+            <li>S</li>
+            <li>T</li>
+            <li>Q</li>
+            <li>Q</li>
+            <li>S</li>
+            <li>S</li>
+        </ul>
+        
+        <ul class="days">
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">1</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">2</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">3</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia Ocupado: Show do Bon Jovi')">4</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">5</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">6</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">7</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">8</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">9</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">10</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">11</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">12</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">13</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">14</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">15</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">16</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">17</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">18</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">19</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">20</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">21</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">22</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">23</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">24</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">25</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">26</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">27</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">28</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">29</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">30</a></li>
+            <li><a href="dashboard.html#calen" onclick="alert('Dia livre')">31</a></li>
+        </ul>
+    </section>
+    <div class="linha2"></div>
+</main>
+<footer>
+    <div class="loc">
+        <h3>LOCALIZAÇÃO</h3>
+        <p></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14631.555546618638!2d-46.646147!3d-23.5364985!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb23619858bc7e63e!2sEscola%20SENAI%20de%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1567774146395!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="contato">
+        <h3>CONTATO</h3>
+        <p>TELEFONES: (11) 1234-5678<br />E-MAIL: alexandre@ROLETOP.com.br<br/>MÍDIA SOCIAL:</p>
+    </div>
+</footer>
+
+<!-- Abrir/fechar menu mobile-->
+<script>
+    function toggleMobileMenu() {
+        var ul = document.querySelector("nav ul");
+        var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+        var icon = document.querySelector(".icon > i");
+        
+        ul.classList.toggle("mobile-mode");
+        
+        if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.remove("fa");
+            
+            icon.classList.add("fas");
+            icon.classList.add("fa-times");
+        } else {
+            icon.classList.remove("fas");
+            icon.classList.remove("fa-times");
+            
+            icon.classList.add("fa");
+            icon.classList.add("fa-bars");
+        }
+        
+        for (var button of commonButtons) {
+            button.classList.toggle("active");
+        }
+    }
+</script>
+</body>
+
+</html>
